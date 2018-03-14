@@ -62,7 +62,6 @@ class LinkCrawler(scrapy.Spider):
                 v_contentString.append(v_part)
 
             print('Conteudo: ', v_contentString)
-
             createFileWithContent(v_title, v_author, v_datePublished, v_content)
             #for v_div in response.css('div.feed-text-wrapper'):
             #    v_link = v_div.css('a').xpath('@href').extract_first()
@@ -72,8 +71,8 @@ class LinkCrawler(scrapy.Spider):
             print('Crawler Finish')
         
         def createFileWithContent(p_title, p_author, p_date, *p_content):
-            os.mkdir('content/' + p_author + '/')
-            v_file = open('content/' + p_author + '/' + p_title[0:10] + '.txt')    
+            os.mkdir('content/' + p_author[1:2] + '/')
+            v_file = open('content/' + p_author[1:2] + '/' + p_title[1:2] + '.txt', 'w')    
 
         def toString(v_content):
             v_content = v_content.encode('ascii', 'ignore')
