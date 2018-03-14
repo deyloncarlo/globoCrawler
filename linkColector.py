@@ -40,21 +40,45 @@ class LinkCrawler(scrapy.Spider):
     def parse(self, response):
         def contentCrawler(self, response):
             print('Crawler Start')
-            v_titulo = response.xpath('//h1[@class="content-head__title"]/text()').extract_first()
-            print('Titulo: ', v_titulo)
-            v_autor = response.xpath('//p[@class="content-publication-data__from"]/text()').extract_first()
-            print('Autor: ', v_autor)
-            v_dataPublicacao = response.xpath('//time[@itemprop="datePublished"]/text()').extract_first()
-            print('Data: ', v_dataPublicacao)
-            v_conteudo = response.xpath('//p[contains(@class,"content-text__container")]/text()').extract()
-            print('Conteudo: ', v_conteudo)
+            
+            v_title = response.xpath('//h1[@class="content-head__title"]/text()').extract_first()
+            v_title = toString(v_title)
+            print('Titulo: ', v_title)
+
+            v_author = response.xpath('//p[@class="content-publication-data__from"]/text()').extract_first()
+            print('Valor preenchido Autor:',  v_author)
+            v_author = toString(v_author)
+            print('Autor: ', v_author)
+            
+            v_datePublished = response.xpath('//time[@itemprop="datePublished"]/text()').extract_first()
+            v_datePublished = toString(v_datePublished)
+            print('Data: ', v_datePublished)
+            
+            v_content = response.xpath('//p[contains(@class,"content-text__container")]/text()').extract()
+            
+            v_contentString = []
+            for v_part in v_content:
+                v_part = toString(v_part)
+                v_contentString.append(v_part)
+
+            print('Conteudo: ', v_contentString)
+
+            createFileWithContent(v_title, v_author, v_datePublished, v_content)
             #for v_div in response.css('div.feed-text-wrapper'):
             #    v_link = v_div.css('a').xpath('@href').extract_first()
             #    v_link = v_link.encode('ascii', 'ignore')
             #    self.linkList.append(str(v_link))
             #escreverLinks()
             print('Crawler Finish')
-                    
+        
+        def createFileWithContent(p_title, p_author, p_date, *p_content):
+            os.mkdir('content/' + p_author + '/')
+            v_file = open('content/' + p_author + '/' + p_title[0:10] + '.txt')    
+
+        def toString(v_content):
+            v_content = v_content.encode('ascii', 'ignore')
+            return str(v_content)
+
         schedule.every(10).seconds.do(contentCrawler, self, response)
         while True:
             schedule.run_pending()
