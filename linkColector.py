@@ -5,6 +5,7 @@ import time
 from time import gmtime, strftime
 from scrapy.selector import Selector
 import os
+import re
 
 class LinkCrawler(scrapy.Spider):
     name = 'linkCrawler'
@@ -56,35 +57,41 @@ class LinkCrawler(scrapy.Spider):
             
             v_content = response.xpath('//p[contains(@class,"content-text__container")]/text()').extract()
             
-            v_contentString = []
+            v_contentString = '';
             for v_part in v_content:
                 v_part = toString(v_part)
-                v_contentString.append(v_part)
+                v_contentString += v_part
 
             print('Conteudo: ', v_contentString)
             createFileWithContent(v_title, v_author, v_datePublished, v_contentString)
-            #for v_div in response.css('div.feed-text-wrapper'):
-            #    v_link = v_div.css('a').xpath('@href').extract_first()
-            #    v_link = v_link.encode('ascii', 'ignore')
-            #    self.linkList.append(str(v_link))
-            #escreverLinks()
             print('Crawler Finish')
         
-        def createFileWithContent(p_title, p_author, p_date, *p_content):
+        def createFileWithContent(p_title, p_author, p_date, p_content):
             if(os.path.exists('content/' + p_author + '/') == False):
                 os.mkdir('content/' + p_author + '/')   
 
-            v_file = open('content/' + p_author + '/' + p_title + '.txt', 'w')
-            v_file.write(p_title + '\n\n');
-            v_file.write(p_author + '\n\n');
-            v_file.write(p_date + '\n\n');
-            v_file.writelines(*p_content);
+            v_file = open('content/' + p_author + '/' + p_title + '.arff', 'w')
+            v_file.write('@relation TEXTvsAUTHOR')
+            v_file.write('\n\n')
+            v_file.write('@attribute title string')
+            v_file.write('\n')
+            v_file.write('@attribute author string')
+            v_file.write('\n')
+            v_file.write('@attribute date string')
+            v_file.write('\n')
+            v_file.write('@attribute content string')
+            v_file.write('\n\n')
+            v_file.write('@data')
+            v_file.write('\n')
+            v_file.write( '"' + p_title + '"' + ',' + '"' + p_author + '"' + ',' + '"' + p_date + '"' + ',' + '"' + p_content + '"');
+            
 
             v_file.close();    
 
         def toString(v_content):
             v_content = v_content.encode('ascii', 'ignore')
-            return str(v_content)
+            v_content = str(v_content);
+            return re.sub('"',"'", v_content)
 
         schedule.every(10).seconds.do(contentCrawler, self, response)
         while True:
