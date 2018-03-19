@@ -7,11 +7,11 @@ import os
 
 class GloboSpider(scrapy.Spider):
     name = 'globoSpider'
-    start_urls = ['http://g1.globo.com/ultimas-noticias.html']
+    start_urls = ['http://g1.globo.com/economia/']
     
     def __init__(self):
         self.linkList = []
-        self.filePath = "/home/deylon/Documentos/links/links.txt"
+        self.filePath = "links/links.txt"
         self.linksOnFile = []
         print("\nLendo arquivo de links...\n")
         v_arquivo = open(self.filePath, 'r')
@@ -51,7 +51,7 @@ class GloboSpider(scrapy.Spider):
             for link in self.linkList:
                 if(link + '\n' in self.linksOnFile):
                     print('Link já coletado: ', link)
-                elif ((link + '\n' in self.linksOnFile) == False):
+                elif ((link) + '\n' in self.linksOnFile) == False and ('/economia/' in link):
                     arquivo.write(str(link))
                     arquivo.write("\n")
             arquivo.close()

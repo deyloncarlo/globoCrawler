@@ -49,6 +49,7 @@ class LinkCrawler(scrapy.Spider):
             v_author = response.xpath('//p[@class="content-publication-data__from"]/text()').extract_first()
             print('Valor preenchido Autor:',  v_author)
             v_author = toString(v_author)
+            v_author = re.sub('Por ', '', v_author);
             print('Autor: ', v_author)
             
             v_datePublished = response.xpath('//time[@itemprop="datePublished"]/text()').extract_first()
