@@ -57,7 +57,7 @@ class GloboSpider(scrapy.Spider):
             arquivo.close()
             print("\nFim escrita no arquivo de links...\n")
         
-        schedule.every().minute.do(coletarLinks, self, response)
+        schedule.every().day.at("20:00").do(coletarLinks, self, response)
         while True:
             schedule.run_pending()
             time.sleep(1)
