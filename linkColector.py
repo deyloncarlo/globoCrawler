@@ -68,26 +68,32 @@ class LinkCrawler(scrapy.Spider):
             print('Crawler Finish')
         
         def createFileWithContent(p_title, p_author, p_date, p_content):
-            if(os.path.exists('content/' + p_author + '/') == False):
-                os.mkdir('content/' + p_author + '/')   
+            if(os.path.exists('content') == False):
+                os.mkdir('content')   
 
-            v_file = open('content/' + p_author + '/' + p_title + '.arff', 'w')
-            v_file.write('@relation TEXTvsAUTHOR')
-            v_file.write('\n\n')
-            v_file.write('@attribute title string')
-            v_file.write('\n')
-            v_file.write('@attribute author string')
-            v_file.write('\n')
-            v_file.write('@attribute date string')
-            v_file.write('\n')
-            v_file.write('@attribute content string')
-            v_file.write('\n\n')
-            v_file.write('@data')
+            v_file = open('content/' + p_author + '.arff', 'w')
+            
+            v_escreveCabecalho = False            
+            if os.path.getsize('content/' + p_author + '.arff') <= 0 :
+                v_escreveCabecalho = True
+                print("Escreve cabecalho...")
+
+            if v_escreveCabecalho:
+                v_file.write('@relation TEXTvsAUTHOR')
+                v_file.write('\n\n')
+                v_file.write('@attribute title string')
+                v_file.write('\n')
+                v_file.write('@attribute author string')
+                v_file.write('\n')
+                v_file.write('@attribute date string')
+                v_file.write('\n')
+                v_file.write('@attribute content string')
+                v_file.write('\n\n')
+                v_file.write('@data')
+            
             v_file.write('\n')
             v_file.write( '"' + p_title + '"' + ',' + '"' + p_author + '"' + ',' + '"' + p_date + '"' + ',' + '"' + p_content + '"');
-            
-
-            v_file.close();    
+            v_file.close();
 
         def toString(v_content):
             v_content = v_content.encode('ascii', 'ignore')
