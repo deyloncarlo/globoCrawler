@@ -1,0 +1,117 @@
+\documentclass[12pt]{article}
+\usepackage{sbc-template}
+\usepackage[brazil]{babel}   
+%\usepackage[latin1]{inputenc}  
+\usepackage[utf8]{inputenc}  
+% UTF-8 encoding is recommended by ShareLaTex
+\usepackage{listings}
+\usepackage[brazil]{babel}
+
+\sloppy
+
+\title{Sistema de detecção de autoria textual por inteligência artificial}
+
+\author{Raoni Leandro B. Nascimento\inst{1}, Deylon Carlo\inst{2} }
+
+\address{
+Curso de Sistemas de informação\\
+ Instituto Federal de Minas Gerais -- Sabará, MG -- Brasil
+  \email{raonileandro@gmail.com, deyloncarlo@gmail.com}
+}
+\lstset{
+  language=Python             
+}
+
+\begin{document} 
+
+\maketitle
+
+\begin{resumo} 
+A inteligência artificial tem sido um dos principais temas de estudo, no que se refere a tecnologia. Com o aumento crescente na produção textual em nosso século, percebe-se a existência de um ambiente propicio para o desenvolvimento de ferramentas que verificam a autoria textual, capazes de aprender e identificar e reduzir o número de quantidade de fraudes que acontecem atualmente nas mais diversas áreas do conhecimento.  
+ 
+\end{resumo}
+
+\section{Introdução}
+O trabalho desenvolvido consiste em criar um sistema capaz de identificar a autoria de um texto através do uso da inteligência artificial. Utilizando aprendizagem de máquina, o sistema, que através do fornecimento prévio de dados, possibilitará o reconhecimento de padrões e características que comprovam a autoria do texto produzido. Para isso, como fonte de teste, a primeira etapa consistirá na criação de crawler, através da linguagem de programação Python, que irá recolher notícias de economia identificando os autores e selecionando a notícia em uma pasta de seu respectivo autor. O que se pretende é reunir uma base de dados em um arquivo .arff consistente em que se possa aplicar variados testes do sistema produzido a fim de verificar se os processos de aprendizagem estão acontecendo corretamente.     
+
+\section{Metodologia} \label{sec:firstpage}
+
+\subsection{Coleta de dados}
+A primeira etapa do trabalho consiste em utilizar e adaptar o crawler para realização da tarefa. Construído em Python, o algoritmo utiliza a biblioteca Scrapy, para fazer leitura da página, utilizando das linguagens de formatação, html e css, para identificar a div onde está o link da notícia. Outra biblioteca utilizada é a Schedule. Com ela é possível criar rotinas (tarefas), organizadas para que o crawler colete notícias regularmente e em horário pré-definido. Para isso, foi criado dois arquivos python, o linkColector e o  realCrawler. A análise começará pelo último citado e na sequência o outro.
+A função coletarLinks identifica a div com o nome (div.feed-text-wrapper) e dentro dela procura a tag "a href" onde está o link da notícia. Logo, o link (v-link) é transformado para o formato ascii e depois armazenado em um array de links, através do método linkList.append(str(v-link)).
+ Por último, é chamada a função escreverLinks(), que irá registrar o link em um arquivo txt.
+ 
+    \begin{lstlisting}
+ def coletarLinks(self, response):
+         self.linkList = []
+        for v-div in response.css('div.feed-text-wrapper'):
+        v-link = v-div.css('a').xpath('@href').extract-first()
+        v-link = v-link.encode('ascii', 'ignore')
+        self.linkList.append(str(v-link))
+        escreverLinks()
+    \end{lstlisting}
+
+            
+O método escreverLinks() chama outro método de nome obterLinksExistentes(). Este método realiza a abertura do arquivo faz a leitura de todos os links já cadastrados e armazena na na primeira posição livre do array linksOnFile o link obtido.
+ 
+
+    \begin{lstlisting}
+ def obterLinksExistentes():
+         self.linksOnFile = []
+        v_arquivo = open(self.filePath, 'r')
+        for v_linha in v_arquivo:
+            self.linksOnFile.append(v_linha);
+        
+        v_arquivo.close()
+        print("\nFim leitura arquivo de links...\n")
+        print('Links encontrados: \n', self.linksOnFile)
+        
+        
+    def escreverLinks():
+        obterLinksExistentes()
+    \end{lstlisting}
+
+
+Após armazenar o link, a função obterLinksExistentes() continua realizando verificações. Como se vê no código abaixo, nesta etapa o for percorre toda lista de links e compara com aqueles já cadastrados. Caso o link já tenha sido coletado em outro momento, ele não faz novo registro. Entretanto, caso não haja outro igual, este link é armazenado definitivamente como uma string no arquivo txt através do arquivo.write(str(link)). 
+
+    \begin{lstlisting}
+print("\nEscrevendo no arquivo de links...\n")
+            arquivo = open(self.filePath, 'a')
+        
+for link in self.linkList:
+    if(link + '\n' in self.linksOnFile):
+        print('Link ja coletado: ', link)
+    elif ((link) + '\n' in self.linksOnFile) == False and 
+    ('/economia/' in link):
+        arquivo.write(str(link))
+        arquivo.write("\n")
+        arquivo.close()
+        print("\nFim escrita no arquivo de links...\n")
+    \end{lstlisting}
+ 
+ Por último, o arquivo realCrawler.py apresenta o uso da biblioteca schedule, quando é definida a rotina em que o crawler coletará os links na seçao de economia do G1. No comando abaixo, é definido que durante todos os dias às 20h com intervalo time.sleep(1) a tarefa será realizada.
+ 
+ \begin{lstlisting}
+ schedule.every().day.at("20:00").do(coletarLinks, self, response)
+        while True:
+            schedule.run_pending()
+            time.sleep(1) 
+ \end{lstlisting}
+
+ 
+
+ 
+
+
+\begin{thebibliography}{9}
+\bibitem{lamport94}
+ \emph{Python documentation}
+ Disponível em: https://www.python.org/doc/
+ \bibitem{lamport94}
+ \emph{Categorização de Textos utilizando algoritmos de
+aprendizagem de máquina com Weka}
+KULTZAK, Adriano Francisco.
+74pg. Trabalho de conclusão de curso, 2016.
+
+\end{thebibliography}
+\end{document}

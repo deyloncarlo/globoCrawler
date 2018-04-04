@@ -1,0 +1,9 @@
+@relation TEXTvsAUTHOR
+
+@attribute title string
+@attribute author string
+@attribute date string
+@attribute content string
+
+@data
+"Caixa teve em 2017 melhor resultado da histria e reduzir juros em crdito habitacional, diz Occhi"," Reuters "," 19/03/2018 13h28 "," O resultado da Caixa Econmica Federal em 2017 foi o melhor da histria graas  reduo de custos e esforos internos, disse nesta segunda-feira (19) o presidente do banco, Gilberto Occhi, acrescentando que o balano ser divulgado at semana que vem.  Segundo ele, a Caixa vai reduzir at o fim do ms os juros do crdito habitacional com recursos da poupana. Occhi ainda afirmou que as portas do banco esto abertas para renegociao da dvida da CSN.  Reportagem do  publicada nesta segunda-feira, mostra que o volume de crdito imobilirio concedido pela Caixa caiu 31%, na comparao com o mesmo ms do ano passado, e que o .  De acordo com o excutivo, a Caixa tem um oramento para 2018 de R$ 82,1 bilhes para investimentos habitacionais no pas. Do total, R$ 58,8 bilhes viro do Fundo de Garantia do Tempo de Servio (FGTS), R$ 12,7 bilhes do Sistema Brasileiro de Poupana e Emprstimo (SBPE) e o restante de outras fontes.  'Temos 82 bilhes para habitao em 2018... sempre h reviso dos investimentos em habitao a cada semestre para que a gente possa efetivamente investir', disse Occhi em um seminrio sobre habitao no Rio de Janeiro.  Occhi afirmou que a meta da Caixa e do governo  financiar cerca de 650 mil novas unidades habitacionais, especialmente do Minha Casa Minha Vida, nos prximos anos. Para auxiliar nesse processo nos prximos anos, o presidente da Caixa disse que conversa com o governo sobre a criao da Letra Imobiliria Garantida (LIG), que seria complementar  caderneta de poupana.   "

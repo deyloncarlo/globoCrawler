@@ -1,0 +1,9 @@
+@relation TEXTvsAUTHOR
+
+@attribute title string
+@attribute author string
+@attribute date string
+@attribute content string
+
+@data
+"Emprstimos do BNDES caem 32% no 1 bimestre"," Reuters, g1 "," 21/03/2018 19h25 "," O Banco Nacional de Desenvolvimento Econmico e Social (BNDES) informou nesta quarta-feira (21) que desembolsou R$ 6,85 bilhes em emprstimos no primeiro bimestre, valor que equivale a uma queda de 32% ante mesma etapa de 2017.  Nos ltimos 12 meses, as concesses feitas pelo banco de fomento totalizaram R$ 67,6 bilhes, um declnio de 22%.  E os indicadores antecedentes do banco sinalizam que uma acelerao dos emprstimos continua distante. No comparativo entre o 1 bimestre de 2018 e os dois primeiros meses de 2017, o volume de consultas caiu 30%, enquanto o de enquadramento teve baixa de 34%. J as aprovaes, etapa imediatamente anterior  da concesso efetiva dos recursos, teve alta de 5%.  Os dados indicam que o ritmo de concesses de financiamentos pelo banco de fomento caminham para o quinto ano consecutivo de queda. Em 2017, o volume de desembolsos do BNDES foi de R$ 70,75 bilhes, o menor nvel em uma dcada.  Neste ano, os financiamentos concedidos pela instituio passaram a ter como referncia a Taxa de Longo Prazo (TLP), que usa preos de mercado na concesso de emprstimos, no lugar da Taxa de Juros de Longo Prazo (TJLP), que tinha juros subsidiados.  Dos R$ 6,85 bilhes desembolsados no 1 bimestre, 55,5% (R$ 3,8 bilhes) foram destinados a micro, pequenas e mdias empresas.  O setor que mais recebeu recursos foi o de infraestrutura: R$ 2,44 bilhes, com o segmento de energia eltrica recebendo R$ 1,1 bilho.  A agropecuria ficou com R$ 1,7 bilho. As liberaes para comrcio e servios somaram R$ 1,73 bilho, enquanto a indstria ficou com R$ 985 milhes. "

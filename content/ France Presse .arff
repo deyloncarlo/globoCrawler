@@ -1,0 +1,9 @@
+@relation TEXTvsAUTHOR
+
+@attribute title string
+@attribute author string
+@attribute date string
+@attribute content string
+
+@data
+"PIB do Chile cresceu 1,5% em 2017, diz BC do pas"," France Presse "," 19/03/2018 15h29 "," O Produto Interno Bruto (PIB) do Chile cresceu 1,5% em 2017 em relao ao ano anterior, estimulado pela recuperao do comrcio e da minerao do cobre no fim do ano, informou nesta segunda-feira(19) o Banco Central do pas.  O Banco Central explicou que 'durante 2017, a atividade econmica cresceu 1,5% em relao a 2016, seguindo uma tendncia crescente a partir do segundo trimestre'.  A maioria das atividades econmicas registraram alta em 2017, mas os setores de servios pessoais e comrcio foram os que mais contriburam para o resultado. J servios empresariais, construo e minerao foram responsveis pelas principais presses negativas na economia chilena.  A minerao foi impactada pela longa greve da mina Escondida no comeo do ano, mas, com o aumento da demanda de seu maior consumidor mundial, a China, o setor conseguiu se recuperar.  'O resultado do setor foi afetado pela retrao da minerao do cobre na primeira parte do ano, um efeito que no foi compensado pelo dinamismo exibido mais tarde', explicou o BC em seu relatrio.  Ao todo, a minerao registrou em 2017 uma queda de 2%. "

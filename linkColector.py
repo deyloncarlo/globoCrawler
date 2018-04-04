@@ -6,9 +6,13 @@ from time import gmtime, strftime
 from scrapy.selector import Selector
 import os
 import re
+from scrapy.http.request import Request
+
+from scrapy.crawler import CrawlerProcess
 
 class LinkCrawler(scrapy.Spider):
     name = 'linkCrawler'
+    start_urls = []
 
     def getLinksToCrawler():
 
@@ -36,25 +40,32 @@ class LinkCrawler(scrapy.Spider):
         print("Links finais: ", v_links)
         return v_links
 
-    start_urls = getLinksToCrawler()
+    start_urls = [getLinksToCrawler()[0]]
+    others_urls = getLinksToCrawler();
     
+    def start_requests(self):
+        for url in self.start_urls:
+            ''' call function to manipulate url'''
+            yield Request(url, self.parse)
+        
+
     def parse(self, response):
         def contentCrawler(self, response):
-            print('Crawler Start')
+            print('Crawler Start: ', response.url)
             
             v_title = response.xpath('//h1[@class="content-head__title"]/text()').extract_first()
             v_title = toString(v_title)
-            print('Titulo: ', v_title)
+            #print('Titulo: ', v_title)
 
             v_author = response.xpath('//p[@class="content-publication-data__from"]/text()').extract_first()
-            print('Valor preenchido Autor:',  v_author)
+            #print('Valor preenchido Autor:',  v_author)
             v_author = toString(v_author)
             v_author = re.sub('Por ', '', v_author);
-            print('Autor: ', v_author)
+            #print('Autor: ', v_author)
             
             v_datePublished = response.xpath('//time[@itemprop="datePublished"]/text()').extract_first()
             v_datePublished = toString(v_datePublished)
-            print('Data: ', v_datePublished)
+            #print('Data: ', v_datePublished)
             
             v_content = response.xpath('//p[contains(@class,"content-text__container")]/text()').extract()
             
@@ -63,9 +74,15 @@ class LinkCrawler(scrapy.Spider):
                 v_part = toString(v_part)
                 v_contentString += v_part
 
-            print('Conteudo: ', v_contentString)
+            #print('Conteudo: ', v_contentString)
             createFileWithContent(v_title, v_author, v_datePublished, v_contentString)
+            writeLinkOnLinksCrawledFile(self);
+            self.others_urls.remove(self.others_urls[0]);
             print('Crawler Finish')
+
+            #if self.others_urls:
+            #    print('Próxima: ', self.others_urls[0])
+            #    return scrapy.Request(url=self.others_urls[0], callback=self.parse)
         
         def createFileWithContent(p_title, p_author, p_date, p_content):
             if(os.path.exists('content') == False):
@@ -95,12 +112,49 @@ class LinkCrawler(scrapy.Spider):
             v_file.write( '"' + p_title + '"' + ',' + '"' + p_author + '"' + ',' + '"' + p_date + '"' + ',' + '"' + p_content + '"');
             v_file.close();
 
+
+            v_globalFile = open('content/globo.arff', 'a')
+            v_escreveCabecalho = False            
+            if os.path.getsize('content/globo.arff') <= 0 :
+                v_escreveCabecalho = True
+                print("Escreve cabecalho...")
+
+            if v_escreveCabecalho:
+                v_globalFile.write('@relation TEXTvsAUTHOR')
+                v_globalFile.write('\n\n')
+                v_globalFile.write('@attribute title string')
+                v_globalFile.write('\n')
+                v_globalFile.write('@attribute author string')
+                v_globalFile.write('\n')
+                v_globalFile.write('@attribute date string')
+                v_globalFile.write('\n')
+                v_globalFile.write('@attribute content string')
+                v_globalFile.write('\n\n')
+                v_globalFile.write('@data')
+            
+            v_globalFile.write('\n')
+            v_globalFile.write( '"' + p_title + '"' + ',' + '"' + p_author + '"' + ',' + '"' + p_date + '"' + ',' + '"' + p_content + '"');
+            v_globalFile.close();
+
+        def writeLinkOnLinksCrawledFile(self):
+            if (self.others_urls[0] in ['\n', '\r\n']) == False:
+                v_file = open('links/linksCrawled.txt', 'a')
+                v_file.write(self.others_urls[0] + '\n')
+
         def toString(v_content):
             v_content = v_content.encode('ascii', 'ignore')
             v_content = str(v_content);
             return re.sub('"',"'", v_content)
 
-        schedule.every(10).seconds.do(contentCrawler, self, response)
-        while True:
-            schedule.run_pending()
-            time.sleep(1)
+        contentCrawler(self, response);
+        #schedule.every(10).seconds.do(contentCrawler, self, response)
+        #while True:
+        #    schedule.run_pending()
+        #    time.sleep(1)
+
+process = CrawlerProcess({
+    'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'
+})
+
+process.crawl(LinkCrawler)
+process.start()
