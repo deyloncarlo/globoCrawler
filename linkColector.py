@@ -7,7 +7,6 @@ from scrapy.selector import Selector
 import os
 import re
 from scrapy.http.request import Request
-
 from scrapy.crawler import CrawlerProcess
 
 class LinkCrawler(scrapy.Spider):
@@ -20,24 +19,24 @@ class LinkCrawler(scrapy.Spider):
             v_linksColleted = []
             v_file = open('links/linksCrawled.txt', 'r')
             for v_line in v_file:
+                v_line = v_line.replace('\n', '')
                 v_linksColleted.append(v_line);
             
             v_file.close()
+            print("Coletados: ", v_linksColleted)
             return v_linksColleted
 
 
         v_links = []
         v_linksColleted = getLinksCrawled()
-        print("\nLendo arquivo de links...\n")
         v_file = open('links/links.txt', 'r')
         for v_line in v_file:
+            v_line = v_line.replace('\n', '')
             if((v_line in v_linksColleted) == False):
-                v_line = v_line.replace('\n', '')
                 v_links.append(v_line);
-
         v_file.close()
-        print("\nFim leitura arquivo de links...\n")
-        print("Links finais: ", v_links)
+        #print("\nFim leitura arquivo de links...\n")
+        #print("Links finais: ", v_links)
         return v_links
 
     start_urls = [getLinksToCrawler()[0]]

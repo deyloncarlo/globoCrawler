@@ -1,0 +1,284 @@
+2018-04-08 20:27:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-04-08 20:27:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-116-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-04-08 20:27:01 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-04-08 20:27:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-04-08 20:27:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-04-08 20:27:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-04-08 20:27:02 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-04-08 20:27:02 [scrapy.core.engine] INFO: Spider opened
+2018-04-08 20:27:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-04-08 20:27:02 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method ?.start_listening of <scrapy.extensions.telnet.TelnetConsole instance at 0x7fef2979ab48>>
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 150, in maybeDeferred
+    result = f(*args, **kw)
+  File "/usr/local/lib/python2.7/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/extensions/telnet.py", line 56, in start_listening
+    self.port = listen_tcp(self.portrange, self.host, self)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/reactor.py", line 14, in listen_tcp
+    return reactor.listenTCP(x, factory, interface=host)
+  File "/usr/lib/python2.7/dist-packages/twisted/internet/posixbase.py", line 478, in listenTCP
+    p.startListening()
+  File "/usr/lib/python2.7/dist-packages/twisted/internet/tcp.py", line 985, in startListening
+    skt.listen(self.backlog)
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 98] Address already in use
+2018-04-08 20:27:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml> (referer: None)
+2018-04-08 20:27:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-04-08 20:27:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 350,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 62676,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 4, 8, 23, 27, 2, 564276),
+ 'log_count/DEBUG': 1,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 7,
+ 'memusage/max': 62189568,
+ 'memusage/startup': 62189568,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 4, 8, 23, 27, 2, 27743)}
+2018-04-08 20:27:02 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-04-08 20:27:02 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method ?.stop_listening of <scrapy.extensions.telnet.TelnetConsole instance at 0x7fef2979ab48>>
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 150, in maybeDeferred
+    result = f(*args, **kw)
+  File "/usr/local/lib/python2.7/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/extensions/telnet.py", line 63, in stop_listening
+    self.port.stopListening()
+AttributeError: TelnetConsole instance has no attribute 'port'
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml'])
+('Crawler Start: ', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml')
+Escreve cabecalho...
+Crawler Finish
+2018-04-08 20:29:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-04-08 20:29:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-116-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-04-08 20:29:01 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-04-08 20:29:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-04-08 20:29:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-04-08 20:29:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-04-08 20:29:01 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-04-08 20:29:01 [scrapy.core.engine] INFO: Spider opened
+2018-04-08 20:29:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-04-08 20:29:01 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-04-08 20:29:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml> (referer: None)
+2018-04-08 20:29:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-04-08 20:29:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 360,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 72195,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 4, 8, 23, 29, 2, 418423),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 62181376,
+ 'memusage/startup': 62181376,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 4, 8, 23, 29, 1, 954196)}
+2018-04-08 20:29:02 [scrapy.core.engine] INFO: Spider closed (finished)
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml'])
+('Crawler Start: ', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml')
+Escreve cabecalho...
+Crawler Finish
+2018-04-08 20:31:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-04-08 20:31:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-116-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-04-08 20:31:01 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-04-08 20:31:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-04-08 20:31:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-04-08 20:31:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-04-08 20:31:01 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-04-08 20:31:01 [scrapy.core.engine] INFO: Spider opened
+2018-04-08 20:31:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-04-08 20:31:01 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method ?.start_listening of <scrapy.extensions.telnet.TelnetConsole instance at 0x7fd1225b9b48>>
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 150, in maybeDeferred
+    result = f(*args, **kw)
+  File "/usr/local/lib/python2.7/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/extensions/telnet.py", line 56, in start_listening
+    self.port = listen_tcp(self.portrange, self.host, self)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/reactor.py", line 14, in listen_tcp
+    return reactor.listenTCP(x, factory, interface=host)
+  File "/usr/lib/python2.7/dist-packages/twisted/internet/posixbase.py", line 478, in listenTCP
+    p.startListening()
+  File "/usr/lib/python2.7/dist-packages/twisted/internet/tcp.py", line 985, in startListening
+    skt.listen(self.backlog)
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 98] Address already in use
+2018-04-08 20:31:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml> (referer: None)
+2018-04-08 20:31:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-04-08 20:31:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 296,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 61128,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 4, 8, 23, 31, 2, 335570),
+ 'log_count/DEBUG': 1,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 7,
+ 'memusage/max': 62144512,
+ 'memusage/startup': 62144512,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 4, 8, 23, 31, 1, 844288)}
+2018-04-08 20:31:02 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-04-08 20:31:02 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method ?.stop_listening of <scrapy.extensions.telnet.TelnetConsole instance at 0x7fd1225b9b48>>
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 150, in maybeDeferred
+    result = f(*args, **kw)
+  File "/usr/local/lib/python2.7/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/extensions/telnet.py", line 63, in stop_listening
+    self.port.stopListening()
+AttributeError: TelnetConsole instance has no attribute 'port'
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml'])
+('Crawler Start: ', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml')
+Escreve cabecalho...
+Crawler Finish
+2018-04-08 20:33:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-04-08 20:33:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-116-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-04-08 20:33:01 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-04-08 20:33:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-04-08 20:33:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-04-08 20:33:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-04-08 20:33:01 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-04-08 20:33:01 [scrapy.core.engine] INFO: Spider opened
+2018-04-08 20:33:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-04-08 20:33:01 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-04-08 20:33:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml> (referer: None)
+2018-04-08 20:33:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-04-08 20:33:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 312,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 56760,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 4, 8, 23, 33, 2, 138040),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 62369792,
+ 'memusage/startup': 62369792,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 4, 8, 23, 33, 1, 694410)}
+2018-04-08 20:33:02 [scrapy.core.engine] INFO: Spider closed (finished)
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml'])
+('Crawler Start: ', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml')
+Escreve cabecalho...
+Crawler Finish
