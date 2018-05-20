@@ -1,0 +1,24 @@
+
+Entrega dia 18/05/2018
+
+   - História da arte
+   - Problemas que queremos responder
+   - Quais técnicas de aprendizado de máquina podem/devem ser utilizadas 
+---------------------------------------------------------------------------
+
+Usar o StringToVector dentro do próprio WEKA para montar o vetor e, assim, conseguir aplicar os algoritmos   
+   
+   
+Perguntas:
+
+ 1 - Quem é o autor de um determinado texto?
+ 2 - Quem é o autor de um determinado título?
+ 3 - Quais as palavras mais utulizadas por um autor?
+ 4 - Qual o índice de repetição de paralavras de um autor?
+ 5 - Qual o tamanho médio dos períodos do texto de um determinado autor?
+ 6 - Número de palavras que não se repetem em um texto de um determinado autor? (Verificar se o autor tem um bom vocabulário)
+ 7 - Qual o temperamento do texto do autor? (Nativo, Positivo, Neutor)
+ 8 - Qual o gênero do text? (Cartas, reportage,Blog)
+ 9 - Qual o posicionamento político do autor? (Esquerda, Direita)
+ 10- Qual o tipo assunto que o autor mais fala?
+ 11- O autor se baseia em muitos dados?

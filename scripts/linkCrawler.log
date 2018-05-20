@@ -3023,3 +3023,1219 @@ Escrevendo no arquivo de links...
 
 Fim escrita no arquivo de links...
 
+2018-05-20 13:49:02 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-20 13:49:02 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-20 13:49:02 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-20 13:49:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-20 13:49:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-20 13:49:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-20 13:49:02 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-20 13:49:02 [scrapy.core.engine] INFO: Spider opened
+2018-05-20 13:49:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-20 13:49:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-20 13:49:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://brasilianismo.blogosfera.uol.com.br/> from <GET https://brasilianismo.blogosfera.uol.com.br/>
+2018-05-20 13:49:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://brasilianismo.blogosfera.uol.com.br/> (referer: None)
+2018-05-20 13:49:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-20 13:49:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 500,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 32283,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 20, 16, 49, 2, 858123),
+ 'log_count/DEBUG': 3,
+ 'log_count/INFO': 7,
+ 'memusage/max': 60764160,
+ 'memusage/startup': 60764160,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2018, 5, 20, 16, 49, 2, 408858)}
+2018-05-20 13:49:02 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Lendo arquivo de links...
+
+
+Fim leitura arquivo de links...
+
+
+Escrevendo no arquivo de links...
+
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/17/sem-candidato-forte-mercado-se-preocupa-com-eleicao-e-flerta-com-bolsonaro/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/16/luta-contra-a-corrupcao-se-torna-um-trunfo-do-soft-power-brasileiro/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/14/repercussao-mundial-sobre-pm-que-matou-ladrao-expoe-violencia-do-brasil/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/09/escola-sem-partido-ameaca-relacoes-academicas-do-brasil-com-o-mundo/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/09/estudos-brasileiros-nos-eua-em-tempos-de-crise-anos-1960-70-e-hoje/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/08/com-crise-e-corrupcao-agencia-ve-fim-de-tabu-sobre-privatizacao-no-brasil/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/07/crise-politica-faz-brasil-buscar-versao-tropical-de-macron-diz-le-monde/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/04/mudanca-no-foro-privilegiado-leva-medo-ao-congresso-diz-financial-times/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/02/decadencia-da-imagem-do-brasil-e-drastica-diz-noam-chomsky/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/04/30/violencia-politica-para-de-chocar-e-parece-ter-virado-algo-normal-no-brasil/')
+
+Fim escrita no arquivo de links...
+
+2018-05-20 13:49:03 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-20 13:49:03 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-20 13:49:03 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-20 13:49:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-20 13:49:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-20 13:49:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-20 13:49:03 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-20 13:49:03 [scrapy.core.engine] INFO: Spider opened
+2018-05-20 13:49:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-20 13:49:03 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-20 13:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://carlosmelo.blogosfera.uol.com.br/> (referer: None)
+2018-05-20 13:49:03 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-20 13:49:03 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 247,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 41290,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 20, 16, 49, 3, 708600),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 60862464,
+ 'memusage/startup': 60862464,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 20, 16, 49, 3, 403270)}
+2018-05-20 13:49:03 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Lendo arquivo de links...
+
+
+Fim leitura arquivo de links...
+
+
+Escrevendo no arquivo de links...
+
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/16/dificil-situacao-de-geraldo-alckmin/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/15/mais-dificil-sera-governar/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/08/joaquim-barbosa-e-o-nao-fato-politico/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/06/a-prisao-de-lula-e-o-quixotismo-do-pt/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/04/sinais-importantes/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/02/a-banalizacao-do-mal/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/04/27/joaquim-barbosa-acelera-a-eleicao/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/04/25/a-entrevista-de-jose-dirceu/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/04/19/o-psdb-e-o-mundo-vasto-mundo/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/04/17/o-desafio-de-joaquim-barbosa/')
+
+Fim escrita no arquivo de links...
+
+2018-05-20 13:49:04 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-20 13:49:04 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-20 13:49:04 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-20 13:49:04 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-20 13:49:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-20 13:49:04 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-20 13:49:04 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-20 13:49:04 [scrapy.core.engine] INFO: Spider opened
+2018-05-20 13:49:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-20 13:49:04 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-20 13:49:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://josiasdesouza.blogosfera.uol.com.br/> from <GET https://josiasdesouza.blogosfera.uol.com.br/>
+2018-05-20 13:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://josiasdesouza.blogosfera.uol.com.br/> (referer: None)
+2018-05-20 13:49:04 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-20 13:49:04 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 500,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 29826,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 20, 16, 49, 4, 656081),
+ 'log_count/DEBUG': 3,
+ 'log_count/INFO': 7,
+ 'memusage/max': 60813312,
+ 'memusage/startup': 60813312,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2018, 5, 20, 16, 49, 4, 221988)}
+2018-05-20 13:49:04 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Lendo arquivo de links...
+
+
+Fim leitura arquivo de links...
+
+
+Escrevendo no arquivo de links...
+
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/20/novo-pacote-anticorrupcao-quer-mudar-sistematica-de-indicacoes-para-o-stf/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/depoimento-da-filha-de-temer-a-pf-e-gelatinoso/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/herdeiro-de-jose-alencar-entra-no-jogo-de-2018/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/gilmar-solta-mais-4-que-bretas-mandara-prender/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/tecnicamente-o-pt-virou-organizacao-criminosa/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/popularidade-2/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/18/retirar-carros-e-assessores-ameaca-a-subsistencia-de-lula-sustenta-defesa/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/18/prisao-de-jose-dirceu-ganhou-ar-de-normalidade/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/18/temer-precisamos-de-um-unico-nome-de-centro/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/18/dirceu-atual-faz-do-dirceu-de-1968-uma-alegoria/')
+
+Fim escrita no arquivo de links...
+
+2018-05-20 13:49:05 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-20 13:49:05 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-20 13:49:05 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-20 13:49:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-20 13:49:05 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-20 13:49:05 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-20 13:49:05 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-20 13:49:05 [scrapy.core.engine] INFO: Spider opened
+2018-05-20 13:49:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-20 13:49:05 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-20 13:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://blogdosakamoto.blogosfera.uol.com.br/> (referer: None)
+2018-05-20 13:49:05 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-20 13:49:05 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 251,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 45950,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 20, 16, 49, 5, 723412),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 61128704,
+ 'memusage/startup': 61128704,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 20, 16, 49, 5, 210176)}
+2018-05-20 13:49:05 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Lendo arquivo de links...
+
+
+Fim leitura arquivo de links...
+
+
+Escrevendo no arquivo de links...
+
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/19/vendo-harry-e-meghan-deu-vontade-de-ter-um-rei-no-brasil-jose-mujica/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/18/chefe-do-combate-a-escravidao-revela-falta-de-recursos-e-pode-ser-demitida/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/18/brasil-nao-tem-pressa-para-tirar-idosos-pobres-da-prisao-do-analfabetismo/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/17/noticia-falsa-diz-que-terei-o-poder-de-censurar-noticia-falsa-no-facebook/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/17/quase-28-milhoes-de-brasileiros-gritam-que-o-tema-da-eleicao-sera-emprego/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/17/a-montanha-de-jovens-negros-mortos-e-prova-de-nosso-fracasso-como-pais/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/16/mesmo-na-lista-suja-da-escravidao-cutrale-recebe-selo-de-boas-praticas/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/16/ocupacoes-crescem-com-desemprego-mas-governo-temer-diz-que-esta-tudo-lindo/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/15/o-caso-da-pm-e-do-ladrao-voce-tambem-comenta-sem-ler-nas-redes-sociais/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/14/o-brasil-voltou-20-anos-em-2-exceto-pela-virgula-o-governo-tem-razao/')
+
+Fim escrita no arquivo de links...
+
+2018-05-20 13:50:02 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-20 13:50:02 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-20 13:50:02 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-20 13:50:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-20 13:50:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-20 13:50:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-20 13:50:02 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-20 13:50:02 [scrapy.core.engine] INFO: Spider opened
+2018-05-20 13:50:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-20 13:50:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-20 13:50:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://brasilianismo.blogosfera.uol.com.br/> from <GET https://brasilianismo.blogosfera.uol.com.br/>
+2018-05-20 13:50:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://brasilianismo.blogosfera.uol.com.br/> (referer: None)
+2018-05-20 13:50:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-20 13:50:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 500,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 32283,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 20, 16, 50, 2, 684417),
+ 'log_count/DEBUG': 3,
+ 'log_count/INFO': 7,
+ 'memusage/max': 61038592,
+ 'memusage/startup': 61038592,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2018, 5, 20, 16, 50, 2, 250589)}
+2018-05-20 13:50:02 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Lendo arquivo de links...
+
+
+Fim leitura arquivo de links...
+
+
+Escrevendo no arquivo de links...
+
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/17/sem-candidato-forte-mercado-se-preocupa-com-eleicao-e-flerta-com-bolsonaro/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/16/luta-contra-a-corrupcao-se-torna-um-trunfo-do-soft-power-brasileiro/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/14/repercussao-mundial-sobre-pm-que-matou-ladrao-expoe-violencia-do-brasil/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/09/escola-sem-partido-ameaca-relacoes-academicas-do-brasil-com-o-mundo/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/09/estudos-brasileiros-nos-eua-em-tempos-de-crise-anos-1960-70-e-hoje/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/08/com-crise-e-corrupcao-agencia-ve-fim-de-tabu-sobre-privatizacao-no-brasil/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/07/crise-politica-faz-brasil-buscar-versao-tropical-de-macron-diz-le-monde/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/04/mudanca-no-foro-privilegiado-leva-medo-ao-congresso-diz-financial-times/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/02/decadencia-da-imagem-do-brasil-e-drastica-diz-noam-chomsky/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/04/30/violencia-politica-para-de-chocar-e-parece-ter-virado-algo-normal-no-brasil/')
+
+Fim escrita no arquivo de links...
+
+2018-05-20 13:50:03 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-20 13:50:03 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-20 13:50:03 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-20 13:50:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-20 13:50:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-20 13:50:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-20 13:50:03 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-20 13:50:03 [scrapy.core.engine] INFO: Spider opened
+2018-05-20 13:50:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-20 13:50:03 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-20 13:50:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://carlosmelo.blogosfera.uol.com.br/> (referer: None)
+2018-05-20 13:50:03 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-20 13:50:03 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 247,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 41290,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 20, 16, 50, 3, 490943),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 60784640,
+ 'memusage/startup': 60784640,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 20, 16, 50, 3, 203007)}
+2018-05-20 13:50:03 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Lendo arquivo de links...
+
+
+Fim leitura arquivo de links...
+
+
+Escrevendo no arquivo de links...
+
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/16/dificil-situacao-de-geraldo-alckmin/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/15/mais-dificil-sera-governar/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/08/joaquim-barbosa-e-o-nao-fato-politico/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/06/a-prisao-de-lula-e-o-quixotismo-do-pt/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/04/sinais-importantes/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/02/a-banalizacao-do-mal/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/04/27/joaquim-barbosa-acelera-a-eleicao/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/04/25/a-entrevista-de-jose-dirceu/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/04/19/o-psdb-e-o-mundo-vasto-mundo/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/04/17/o-desafio-de-joaquim-barbosa/')
+
+Fim escrita no arquivo de links...
+
+2018-05-20 13:50:03 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-20 13:50:03 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-20 13:50:03 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-20 13:50:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-20 13:50:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-20 13:50:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-20 13:50:03 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-20 13:50:03 [scrapy.core.engine] INFO: Spider opened
+2018-05-20 13:50:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-20 13:50:03 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-20 13:50:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://josiasdesouza.blogosfera.uol.com.br/> from <GET https://josiasdesouza.blogosfera.uol.com.br/>
+2018-05-20 13:50:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://josiasdesouza.blogosfera.uol.com.br/> (referer: None)
+2018-05-20 13:50:04 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-20 13:50:04 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 500,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 29827,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 20, 16, 50, 4, 352118),
+ 'log_count/DEBUG': 3,
+ 'log_count/INFO': 7,
+ 'memusage/max': 61149184,
+ 'memusage/startup': 61149184,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2018, 5, 20, 16, 50, 3, 917557)}
+2018-05-20 13:50:04 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Lendo arquivo de links...
+
+
+Fim leitura arquivo de links...
+
+
+Escrevendo no arquivo de links...
+
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/20/novo-pacote-anticorrupcao-quer-mudar-sistematica-de-indicacoes-para-o-stf/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/depoimento-da-filha-de-temer-a-pf-e-gelatinoso/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/herdeiro-de-jose-alencar-entra-no-jogo-de-2018/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/gilmar-solta-mais-4-que-bretas-mandara-prender/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/tecnicamente-o-pt-virou-organizacao-criminosa/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/popularidade-2/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/18/retirar-carros-e-assessores-ameaca-a-subsistencia-de-lula-sustenta-defesa/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/18/prisao-de-jose-dirceu-ganhou-ar-de-normalidade/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/18/temer-precisamos-de-um-unico-nome-de-centro/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/18/dirceu-atual-faz-do-dirceu-de-1968-uma-alegoria/')
+
+Fim escrita no arquivo de links...
+
+2018-05-20 13:50:04 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-20 13:50:04 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-20 13:50:04 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-20 13:50:04 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-20 13:50:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-20 13:50:04 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-20 13:50:04 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-20 13:50:04 [scrapy.core.engine] INFO: Spider opened
+2018-05-20 13:50:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-20 13:50:04 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-20 13:50:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://blogdosakamoto.blogosfera.uol.com.br/> (referer: None)
+2018-05-20 13:50:05 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-20 13:50:05 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 251,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 45958,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 20, 16, 50, 5, 146255),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 61399040,
+ 'memusage/startup': 61399040,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 20, 16, 50, 4, 891144)}
+2018-05-20 13:50:05 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Lendo arquivo de links...
+
+
+Fim leitura arquivo de links...
+
+
+Escrevendo no arquivo de links...
+
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/19/vendo-harry-e-meghan-deu-vontade-de-ter-um-rei-no-brasil-jose-mujica/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/18/chefe-do-combate-a-escravidao-revela-falta-de-recursos-e-pode-ser-demitida/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/18/brasil-nao-tem-pressa-para-tirar-idosos-pobres-da-prisao-do-analfabetismo/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/17/noticia-falsa-diz-que-terei-o-poder-de-censurar-noticia-falsa-no-facebook/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/17/quase-28-milhoes-de-brasileiros-gritam-que-o-tema-da-eleicao-sera-emprego/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/17/a-montanha-de-jovens-negros-mortos-e-prova-de-nosso-fracasso-como-pais/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/16/mesmo-na-lista-suja-da-escravidao-cutrale-recebe-selo-de-boas-praticas/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/16/ocupacoes-crescem-com-desemprego-mas-governo-temer-diz-que-esta-tudo-lindo/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/15/o-caso-da-pm-e-do-ladrao-voce-tambem-comenta-sem-ler-nas-redes-sociais/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/14/o-brasil-voltou-20-anos-em-2-exceto-pela-virgula-o-governo-tem-razao/')
+
+Fim escrita no arquivo de links...
+
+2018-05-20 13:51:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-20 13:51:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-20 13:51:01 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-20 13:51:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-20 13:51:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-20 13:51:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-20 13:51:01 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-20 13:51:01 [scrapy.core.engine] INFO: Spider opened
+2018-05-20 13:51:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-20 13:51:01 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-20 13:51:01 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://brasilianismo.blogosfera.uol.com.br/> from <GET https://brasilianismo.blogosfera.uol.com.br/>
+2018-05-20 13:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://brasilianismo.blogosfera.uol.com.br/> (referer: None)
+2018-05-20 13:51:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-20 13:51:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 500,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 32291,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 20, 16, 51, 2, 46965),
+ 'log_count/DEBUG': 3,
+ 'log_count/INFO': 7,
+ 'memusage/max': 61149184,
+ 'memusage/startup': 61149184,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2018, 5, 20, 16, 51, 1, 638619)}
+2018-05-20 13:51:02 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Lendo arquivo de links...
+
+
+Fim leitura arquivo de links...
+
+
+Escrevendo no arquivo de links...
+
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/17/sem-candidato-forte-mercado-se-preocupa-com-eleicao-e-flerta-com-bolsonaro/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/16/luta-contra-a-corrupcao-se-torna-um-trunfo-do-soft-power-brasileiro/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/14/repercussao-mundial-sobre-pm-que-matou-ladrao-expoe-violencia-do-brasil/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/09/escola-sem-partido-ameaca-relacoes-academicas-do-brasil-com-o-mundo/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/09/estudos-brasileiros-nos-eua-em-tempos-de-crise-anos-1960-70-e-hoje/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/08/com-crise-e-corrupcao-agencia-ve-fim-de-tabu-sobre-privatizacao-no-brasil/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/07/crise-politica-faz-brasil-buscar-versao-tropical-de-macron-diz-le-monde/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/04/mudanca-no-foro-privilegiado-leva-medo-ao-congresso-diz-financial-times/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/02/decadencia-da-imagem-do-brasil-e-drastica-diz-noam-chomsky/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/04/30/violencia-politica-para-de-chocar-e-parece-ter-virado-algo-normal-no-brasil/')
+
+Fim escrita no arquivo de links...
+
+2018-05-20 13:51:02 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-20 13:51:02 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-20 13:51:02 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-20 13:51:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-20 13:51:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-20 13:51:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-20 13:51:02 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-20 13:51:02 [scrapy.core.engine] INFO: Spider opened
+2018-05-20 13:51:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-20 13:51:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-20 13:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://carlosmelo.blogosfera.uol.com.br/> (referer: None)
+2018-05-20 13:51:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-20 13:51:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 247,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 41298,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 20, 16, 51, 2, 812389),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 61001728,
+ 'memusage/startup': 61001728,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 20, 16, 51, 2, 548504)}
+2018-05-20 13:51:02 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Lendo arquivo de links...
+
+
+Fim leitura arquivo de links...
+
+
+Escrevendo no arquivo de links...
+
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/16/dificil-situacao-de-geraldo-alckmin/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/15/mais-dificil-sera-governar/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/08/joaquim-barbosa-e-o-nao-fato-politico/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/06/a-prisao-de-lula-e-o-quixotismo-do-pt/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/04/sinais-importantes/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/02/a-banalizacao-do-mal/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/04/27/joaquim-barbosa-acelera-a-eleicao/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/04/25/a-entrevista-de-jose-dirceu/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/04/19/o-psdb-e-o-mundo-vasto-mundo/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/04/17/o-desafio-de-joaquim-barbosa/')
+
+Fim escrita no arquivo de links...
+
+2018-05-20 13:51:03 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-20 13:51:03 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-20 13:51:03 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-20 13:51:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-20 13:51:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-20 13:51:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-20 13:51:03 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-20 13:51:03 [scrapy.core.engine] INFO: Spider opened
+2018-05-20 13:51:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-20 13:51:03 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-20 13:51:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://josiasdesouza.blogosfera.uol.com.br/> from <GET https://josiasdesouza.blogosfera.uol.com.br/>
+2018-05-20 13:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://josiasdesouza.blogosfera.uol.com.br/> (referer: None)
+2018-05-20 13:51:03 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-20 13:51:03 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 500,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 29835,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 20, 16, 51, 3, 708185),
+ 'log_count/DEBUG': 3,
+ 'log_count/INFO': 7,
+ 'memusage/max': 61026304,
+ 'memusage/startup': 61026304,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2018, 5, 20, 16, 51, 3, 299653)}
+2018-05-20 13:51:03 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Lendo arquivo de links...
+
+
+Fim leitura arquivo de links...
+
+
+Escrevendo no arquivo de links...
+
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/20/novo-pacote-anticorrupcao-quer-mudar-sistematica-de-indicacoes-para-o-stf/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/depoimento-da-filha-de-temer-a-pf-e-gelatinoso/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/herdeiro-de-jose-alencar-entra-no-jogo-de-2018/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/gilmar-solta-mais-4-que-bretas-mandara-prender/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/tecnicamente-o-pt-virou-organizacao-criminosa/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/popularidade-2/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/18/retirar-carros-e-assessores-ameaca-a-subsistencia-de-lula-sustenta-defesa/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/18/prisao-de-jose-dirceu-ganhou-ar-de-normalidade/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/18/temer-precisamos-de-um-unico-nome-de-centro/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/18/dirceu-atual-faz-do-dirceu-de-1968-uma-alegoria/')
+
+Fim escrita no arquivo de links...
+
+2018-05-20 13:51:04 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-20 13:51:04 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-20 13:51:04 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-20 13:51:04 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-20 13:51:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-20 13:51:04 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-20 13:51:04 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-20 13:51:04 [scrapy.core.engine] INFO: Spider opened
+2018-05-20 13:51:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-20 13:51:04 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-20 13:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://blogdosakamoto.blogosfera.uol.com.br/> (referer: None)
+2018-05-20 13:51:04 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-20 13:51:04 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 251,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 45950,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 20, 16, 51, 4, 576400),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 60751872,
+ 'memusage/startup': 60751872,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 20, 16, 51, 4, 275043)}
+2018-05-20 13:51:04 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Lendo arquivo de links...
+
+
+Fim leitura arquivo de links...
+
+
+Escrevendo no arquivo de links...
+
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/19/vendo-harry-e-meghan-deu-vontade-de-ter-um-rei-no-brasil-jose-mujica/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/18/chefe-do-combate-a-escravidao-revela-falta-de-recursos-e-pode-ser-demitida/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/18/brasil-nao-tem-pressa-para-tirar-idosos-pobres-da-prisao-do-analfabetismo/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/17/noticia-falsa-diz-que-terei-o-poder-de-censurar-noticia-falsa-no-facebook/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/17/quase-28-milhoes-de-brasileiros-gritam-que-o-tema-da-eleicao-sera-emprego/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/17/a-montanha-de-jovens-negros-mortos-e-prova-de-nosso-fracasso-como-pais/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/16/mesmo-na-lista-suja-da-escravidao-cutrale-recebe-selo-de-boas-praticas/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/16/ocupacoes-crescem-com-desemprego-mas-governo-temer-diz-que-esta-tudo-lindo/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/15/o-caso-da-pm-e-do-ladrao-voce-tambem-comenta-sem-ler-nas-redes-sociais/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/14/o-brasil-voltou-20-anos-em-2-exceto-pela-virgula-o-governo-tem-razao/')
+
+Fim escrita no arquivo de links...
+
+2018-05-20 13:52:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-20 13:52:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-20 13:52:01 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-20 13:52:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-20 13:52:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-20 13:52:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-20 13:52:02 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-20 13:52:02 [scrapy.core.engine] INFO: Spider opened
+2018-05-20 13:52:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-20 13:52:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-20 13:52:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://brasilianismo.blogosfera.uol.com.br/> from <GET https://brasilianismo.blogosfera.uol.com.br/>
+2018-05-20 13:52:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://brasilianismo.blogosfera.uol.com.br/> (referer: None)
+2018-05-20 13:52:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-20 13:52:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 500,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 32283,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 20, 16, 52, 2, 776086),
+ 'log_count/DEBUG': 3,
+ 'log_count/INFO': 7,
+ 'memusage/max': 61145088,
+ 'memusage/startup': 61145088,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2018, 5, 20, 16, 52, 2, 96224)}
+2018-05-20 13:52:02 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Lendo arquivo de links...
+
+
+Fim leitura arquivo de links...
+
+
+Escrevendo no arquivo de links...
+
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/17/sem-candidato-forte-mercado-se-preocupa-com-eleicao-e-flerta-com-bolsonaro/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/16/luta-contra-a-corrupcao-se-torna-um-trunfo-do-soft-power-brasileiro/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/14/repercussao-mundial-sobre-pm-que-matou-ladrao-expoe-violencia-do-brasil/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/09/escola-sem-partido-ameaca-relacoes-academicas-do-brasil-com-o-mundo/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/09/estudos-brasileiros-nos-eua-em-tempos-de-crise-anos-1960-70-e-hoje/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/08/com-crise-e-corrupcao-agencia-ve-fim-de-tabu-sobre-privatizacao-no-brasil/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/07/crise-politica-faz-brasil-buscar-versao-tropical-de-macron-diz-le-monde/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/04/mudanca-no-foro-privilegiado-leva-medo-ao-congresso-diz-financial-times/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/05/02/decadencia-da-imagem-do-brasil-e-drastica-diz-noam-chomsky/')
+('Link j\xc3\xa1 coletado: ', 'https://brasilianismo.blogosfera.uol.com.br/2018/04/30/violencia-politica-para-de-chocar-e-parece-ter-virado-algo-normal-no-brasil/')
+
+Fim escrita no arquivo de links...
+
+2018-05-20 13:52:03 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-20 13:52:03 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-20 13:52:03 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-20 13:52:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-20 13:52:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-20 13:52:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-20 13:52:03 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-20 13:52:03 [scrapy.core.engine] INFO: Spider opened
+2018-05-20 13:52:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-20 13:52:03 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-20 13:52:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://carlosmelo.blogosfera.uol.com.br/> (referer: None)
+2018-05-20 13:52:03 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-20 13:52:03 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 247,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 41290,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 20, 16, 52, 3, 651044),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 61026304,
+ 'memusage/startup': 61026304,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 20, 16, 52, 3, 343281)}
+2018-05-20 13:52:03 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Lendo arquivo de links...
+
+
+Fim leitura arquivo de links...
+
+
+Escrevendo no arquivo de links...
+
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/16/dificil-situacao-de-geraldo-alckmin/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/15/mais-dificil-sera-governar/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/08/joaquim-barbosa-e-o-nao-fato-politico/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/06/a-prisao-de-lula-e-o-quixotismo-do-pt/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/04/sinais-importantes/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/05/02/a-banalizacao-do-mal/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/04/27/joaquim-barbosa-acelera-a-eleicao/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/04/25/a-entrevista-de-jose-dirceu/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/04/19/o-psdb-e-o-mundo-vasto-mundo/')
+('Link j\xc3\xa1 coletado: ', 'https://carlosmelo.blogosfera.uol.com.br/2018/04/17/o-desafio-de-joaquim-barbosa/')
+
+Fim escrita no arquivo de links...
+
+2018-05-20 13:52:04 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-20 13:52:04 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-20 13:52:04 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-20 13:52:04 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-20 13:52:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-20 13:52:04 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-20 13:52:04 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-20 13:52:04 [scrapy.core.engine] INFO: Spider opened
+2018-05-20 13:52:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-20 13:52:04 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-20 13:52:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://josiasdesouza.blogosfera.uol.com.br/> from <GET https://josiasdesouza.blogosfera.uol.com.br/>
+2018-05-20 13:52:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://josiasdesouza.blogosfera.uol.com.br/> (referer: None)
+2018-05-20 13:52:04 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-20 13:52:04 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 500,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 29827,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 20, 16, 52, 4, 624162),
+ 'log_count/DEBUG': 3,
+ 'log_count/INFO': 7,
+ 'memusage/max': 60772352,
+ 'memusage/startup': 60772352,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2018, 5, 20, 16, 52, 4, 159682)}
+2018-05-20 13:52:04 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Lendo arquivo de links...
+
+
+Fim leitura arquivo de links...
+
+
+Escrevendo no arquivo de links...
+
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/20/novo-pacote-anticorrupcao-quer-mudar-sistematica-de-indicacoes-para-o-stf/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/depoimento-da-filha-de-temer-a-pf-e-gelatinoso/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/herdeiro-de-jose-alencar-entra-no-jogo-de-2018/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/gilmar-solta-mais-4-que-bretas-mandara-prender/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/tecnicamente-o-pt-virou-organizacao-criminosa/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/19/popularidade-2/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/18/retirar-carros-e-assessores-ameaca-a-subsistencia-de-lula-sustenta-defesa/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/18/prisao-de-jose-dirceu-ganhou-ar-de-normalidade/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/18/temer-precisamos-de-um-unico-nome-de-centro/')
+('Link j\xc3\xa1 coletado: ', 'https://josiasdesouza.blogosfera.uol.com.br/2018/05/18/dirceu-atual-faz-do-dirceu-de-1968-uma-alegoria/')
+
+Fim escrita no arquivo de links...
+
+2018-05-20 13:52:04 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-20 13:52:04 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-20 13:52:04 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-20 13:52:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-20 13:52:05 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-20 13:52:05 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-20 13:52:05 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-20 13:52:05 [scrapy.core.engine] INFO: Spider opened
+2018-05-20 13:52:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-20 13:52:05 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-20 13:52:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://blogdosakamoto.blogosfera.uol.com.br/> (referer: None)
+2018-05-20 13:52:05 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-20 13:52:05 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 251,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 45950,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 20, 16, 52, 5, 444298),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 61001728,
+ 'memusage/startup': 61001728,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 20, 16, 52, 5, 142038)}
+2018-05-20 13:52:05 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Lendo arquivo de links...
+
+
+Fim leitura arquivo de links...
+
+
+Escrevendo no arquivo de links...
+
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/19/vendo-harry-e-meghan-deu-vontade-de-ter-um-rei-no-brasil-jose-mujica/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/18/chefe-do-combate-a-escravidao-revela-falta-de-recursos-e-pode-ser-demitida/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/18/brasil-nao-tem-pressa-para-tirar-idosos-pobres-da-prisao-do-analfabetismo/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/17/noticia-falsa-diz-que-terei-o-poder-de-censurar-noticia-falsa-no-facebook/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/17/quase-28-milhoes-de-brasileiros-gritam-que-o-tema-da-eleicao-sera-emprego/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/17/a-montanha-de-jovens-negros-mortos-e-prova-de-nosso-fracasso-como-pais/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/16/mesmo-na-lista-suja-da-escravidao-cutrale-recebe-selo-de-boas-praticas/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/16/ocupacoes-crescem-com-desemprego-mas-governo-temer-diz-que-esta-tudo-lindo/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/15/o-caso-da-pm-e-do-ladrao-voce-tambem-comenta-sem-ler-nas-redes-sociais/')
+('Link j\xc3\xa1 coletado: ', 'https://blogdosakamoto.blogosfera.uol.com.br/2018/05/14/o-brasil-voltou-20-anos-em-2-exceto-pela-virgula-o-governo-tem-razao/')
+
+Fim escrita no arquivo de links...
+

@@ -1,9 +1,0 @@
-@relation TEXTvsAUTHOR
-
-@attribute title string
-@attribute author string
-@attribute date string
-@attribute content string
-
-@data
-"Principal mensagem do Copom  que taxa de juros deve continuar caindo"," Joo Borges "," 21/03/2018 18h22 ",""

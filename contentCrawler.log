@@ -282,3 +282,663 @@ Crawler Finish
 ('Crawler Start: ', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml')
 Escreve cabecalho...
 Crawler Finish
+2018-05-14 20:15:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-14 20:15:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-121-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-14 20:15:01 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-14 20:15:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-14 20:15:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-14 20:15:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-14 20:15:01 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-14 20:15:01 [scrapy.core.engine] INFO: Spider opened
+2018-05-14 20:15:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-14 20:15:01 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-05-14 20:15:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml> (referer: None)
+2018-05-14 20:15:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-14 20:15:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 331,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 152903,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 14, 23, 15, 2, 480527),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 61091840,
+ 'memusage/startup': 61091840,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 14, 23, 15, 1, 830900)}
+2018-05-14 20:15:02 [scrapy.core.engine] INFO: Spider closed (finished)
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml'])
+('Crawler Start: ', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml')
+Escreve cabecalho...
+Crawler Finish
+2018-05-14 20:17:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-14 20:17:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-121-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-14 20:17:01 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-14 20:17:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-14 20:17:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-14 20:17:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-14 20:17:01 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-14 20:17:01 [scrapy.core.engine] INFO: Spider opened
+2018-05-14 20:17:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-14 20:17:01 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-14 20:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml> (referer: None)
+2018-05-14 20:17:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-14 20:17:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 348,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 139016,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 14, 23, 17, 2, 629143),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 61014016,
+ 'memusage/startup': 61014016,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 14, 23, 17, 1, 913157)}
+2018-05-14 20:17:02 [scrapy.core.engine] INFO: Spider closed (finished)
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml'])
+('Crawler Start: ', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml')
+Escreve cabecalho...
+Crawler Finish
+2018-05-14 20:19:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-14 20:19:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-121-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-14 20:19:01 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-14 20:19:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-14 20:19:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-14 20:19:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-14 20:19:02 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-14 20:19:02 [scrapy.core.engine] INFO: Spider opened
+2018-05-14 20:19:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-14 20:19:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-14 20:19:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml> (referer: None)
+2018-05-14 20:19:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-14 20:19:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 318,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 146947,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 14, 23, 19, 2, 685666),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 61456384,
+ 'memusage/startup': 61456384,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 14, 23, 19, 2, 38524)}
+2018-05-14 20:19:02 [scrapy.core.engine] INFO: Spider closed (finished)
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml'])
+('Crawler Start: ', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml')
+Escreve cabecalho...
+Crawler Finish
+2018-05-14 20:21:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-14 20:21:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-121-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-14 20:21:01 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-14 20:21:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-14 20:21:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-14 20:21:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-14 20:21:02 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-14 20:21:02 [scrapy.core.engine] INFO: Spider opened
+2018-05-14 20:21:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-14 20:21:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-05-14 20:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml> (referer: None)
+2018-05-14 20:21:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-14 20:21:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 309,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 138942,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 14, 23, 21, 2, 870026),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 61124608,
+ 'memusage/startup': 61124608,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 14, 23, 21, 2, 168313)}
+2018-05-14 20:21:02 [scrapy.core.engine] INFO: Spider closed (finished)
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml'])
+('Crawler Start: ', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml')
+Escreve cabecalho...
+Crawler Finish
+2018-05-14 20:23:02 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-14 20:23:02 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-121-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-14 20:23:02 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-14 20:23:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-14 20:23:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-14 20:23:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-14 20:23:02 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-14 20:23:02 [scrapy.core.engine] INFO: Spider opened
+2018-05-14 20:23:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-14 20:23:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-05-14 20:23:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml> (referer: None)
+2018-05-14 20:23:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-14 20:23:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 352,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 149421,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 14, 23, 23, 2, 876908),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 61067264,
+ 'memusage/startup': 61067264,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 14, 23, 23, 2, 323827)}
+2018-05-14 20:23:02 [scrapy.core.engine] INFO: Spider closed (finished)
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml'])
+('Crawler Start: ', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml')
+Escreve cabecalho...
+Crawler Finish
+2018-05-14 20:25:02 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-14 20:25:02 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-121-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-14 20:25:02 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-14 20:25:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-14 20:25:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-14 20:25:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-14 20:25:02 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-14 20:25:02 [scrapy.core.engine] INFO: Spider opened
+2018-05-14 20:25:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-14 20:25:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-05-14 20:25:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml> (referer: None)
+2018-05-14 20:25:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-14 20:25:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 316,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 138202,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 14, 23, 25, 2, 952710),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 61235200,
+ 'memusage/startup': 61235200,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 14, 23, 25, 2, 349090)}
+2018-05-14 20:25:02 [scrapy.core.engine] INFO: Spider closed (finished)
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml'])
+('Crawler Start: ', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml')
+Escreve cabecalho...
+Crawler Finish
+2018-05-14 20:27:02 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-14 20:27:02 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-121-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-14 20:27:02 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-14 20:27:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-14 20:27:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-14 20:27:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-14 20:27:02 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-14 20:27:02 [scrapy.core.engine] INFO: Spider opened
+2018-05-14 20:27:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-14 20:27:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-05-14 20:27:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml> (referer: None)
+2018-05-14 20:27:03 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-14 20:27:03 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 292,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 143781,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 14, 23, 27, 3, 31325),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 60932096,
+ 'memusage/startup': 60932096,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 14, 23, 27, 2, 354797)}
+2018-05-14 20:27:03 [scrapy.core.engine] INFO: Spider closed (finished)
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml'])
+('Crawler Start: ', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml')
+Escreve cabecalho...
+Crawler Finish
+2018-05-14 20:29:02 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-14 20:29:02 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-121-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-14 20:29:02 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-14 20:29:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-14 20:29:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-14 20:29:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-14 20:29:02 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-14 20:29:02 [scrapy.core.engine] INFO: Spider opened
+2018-05-14 20:29:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-14 20:29:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-14 20:29:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml> (referer: None)
+2018-05-14 20:29:03 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-14 20:29:03 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 335,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 147288,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 14, 23, 29, 3, 124932),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 60936192,
+ 'memusage/startup': 60936192,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 14, 23, 29, 2, 443845)}
+2018-05-14 20:29:03 [scrapy.core.engine] INFO: Spider closed (finished)
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml'])
+('Crawler Start: ', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml')
+Escreve cabecalho...
+Crawler Finish
+2018-05-14 20:31:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-14 20:31:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-121-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-14 20:31:01 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-14 20:31:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-14 20:31:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-14 20:31:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-14 20:31:01 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-14 20:31:01 [scrapy.core.engine] INFO: Spider opened
+2018-05-14 20:31:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-14 20:31:01 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-05-14 20:31:02 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://g1.globo.com/economia/blog/joao-borges/post/principal-mensagem-do-copom-e-que-taxa-de-juros-deve-continuar-caindo.ghtmlhttps://g1.globo.com/economia/blog/joao-borges/post/exoneracao-de-meirelles-nao-sai-no-diario-oficial-as-10h-ele-decide-com-temer-se-permanece-na-fazenda.ghtml> (referer: None)
+2018-05-14 20:31:02 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://g1.globo.com/economia/blog/joao-borges/post/principal-mensagem-do-copom-e-que-taxa-de-juros-deve-continuar-caindo.ghtmlhttps://g1.globo.com/economia/blog/joao-borges/post/exoneracao-de-meirelles-nao-sai-no-diario-oficial-as-10h-ele-decide-com-temer-se-permanece-na-fazenda.ghtml>: HTTP status code is not handled or not allowed
+2018-05-14 20:31:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-14 20:31:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 492,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 1840,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/404': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 14, 23, 31, 2, 126352),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/404': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 8,
+ 'memusage/max': 61075456,
+ 'memusage/startup': 61075456,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 14, 23, 31, 1, 646021)}
+2018-05-14 20:31:02 [scrapy.core.engine] INFO: Spider closed (finished)
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+2018-05-14 20:33:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-14 20:33:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-121-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-14 20:33:01 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2018-05-14 20:33:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-14 20:33:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-14 20:33:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-14 20:33:01 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-14 20:33:01 [scrapy.core.engine] INFO: Spider opened
+2018-05-14 20:33:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-14 20:33:01 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-14 20:33:01 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://g1.globo.com/economia/blog/joao-borges/post/principal-mensagem-do-copom-e-que-taxa-de-juros-deve-continuar-caindo.ghtmlhttps://g1.globo.com/economia/blog/joao-borges/post/exoneracao-de-meirelles-nao-sai-no-diario-oficial-as-10h-ele-decide-com-temer-se-permanece-na-fazenda.ghtml> (referer: None)
+2018-05-14 20:33:01 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://g1.globo.com/economia/blog/joao-borges/post/principal-mensagem-do-copom-e-que-taxa-de-juros-deve-continuar-caindo.ghtmlhttps://g1.globo.com/economia/blog/joao-borges/post/exoneracao-de-meirelles-nao-sai-no-diario-oficial-as-10h-ele-decide-com-temer-se-permanece-na-fazenda.ghtml>: HTTP status code is not handled or not allowed
+2018-05-14 20:33:01 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-14 20:33:01 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 492,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 1840,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/404': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 14, 23, 33, 1, 815342),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/404': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 8,
+ 'memusage/max': 60907520,
+ 'memusage/startup': 60907520,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 5, 14, 23, 33, 1, 500633)}
+2018-05-14 20:33:01 [scrapy.core.engine] INFO: Spider closed (finished)
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+2018-05-19 20:15:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-19 20:15:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+Traceback (most recent call last):
+  File "linkColector.py", line 158, in <module>
+    process.crawl(DataCollectorCrawler)
+NameError: name 'DataCollectorCrawler' is not defined
+2018-05-19 20:17:02 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-19 20:17:02 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+Traceback (most recent call last):
+  File "linkColector.py", line 158, in <module>
+    process.crawl(DataCollectorCrawler)
+NameError: name 'DataCollectorCrawler' is not defined
+2018-05-19 20:19:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-19 20:19:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+Traceback (most recent call last):
+  File "linkColector.py", line 158, in <module>
+    process.crawl(DataCollectorCrawler)
+NameError: name 'DataCollectorCrawler' is not defined
+2018-05-19 20:21:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-19 20:21:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+Traceback (most recent call last):
+  File "linkColector.py", line 158, in <module>
+    process.crawl(DataCollectorCrawler)
+NameError: name 'DataCollectorCrawler' is not defined
+2018-05-19 20:23:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-19 20:23:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+Traceback (most recent call last):
+  File "linkColector.py", line 158, in <module>
+    process.crawl(DataCollectorCrawler)
+NameError: name 'DataCollectorCrawler' is not defined
+2018-05-19 20:25:02 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-19 20:25:02 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+Traceback (most recent call last):
+  File "linkColector.py", line 158, in <module>
+    process.crawl(DataCollectorCrawler)
+NameError: name 'DataCollectorCrawler' is not defined
+2018-05-19 20:27:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-19 20:27:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+Traceback (most recent call last):
+  File "linkColector.py", line 158, in <module>
+    process.crawl(DataCollectorCrawler)
+NameError: name 'DataCollectorCrawler' is not defined
+2018-05-19 20:29:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-19 20:29:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+Traceback (most recent call last):
+  File "linkColector.py", line 158, in <module>
+    process.crawl(DataCollectorCrawler)
+NameError: name 'DataCollectorCrawler' is not defined
+2018-05-19 20:31:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-19 20:31:01 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+Traceback (most recent call last):
+  File "linkColector.py", line 158, in <module>
+    process.crawl(DataCollectorCrawler)
+NameError: name 'DataCollectorCrawler' is not defined
+2018-05-19 20:33:02 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapybot)
+2018-05-19 20:33:02 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 16.0.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 0.15.1 (OpenSSL 1.0.2g  1 Mar 2016), cryptography 1.2.3, Platform Linux-4.4.0-124-generic-x86_64-with-Ubuntu-16.04-xenial
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+('Coletados: ', ['https://g1.globo.com/economia/noticia/bndespar-reverte-prejuizo-e-fecha-2017-com-lucro-de-r-3778-bilhoes.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-usar-recursos-da-reoneracao-da-folha-para-custear-intervencao-no-rio-confirma-meirelles.ghtml', 'https://g1.globo.com/economia/noticia/com-falta-de-recursos-e-juros-mais-altos-caixa-perde-lideranca-no-credito-imobiliario-com-recursos-da-poupanca.ghtml', 'https://g1.globo.com/economia/noticia/pib-do-chile-cresceu-15-em-2017-diz-bc-do-pais.ghtml', 'https://g1.globo.com/economia/noticia/balanca-comercial-acumula-superavit-de-us-364-bilhoes-em-marco.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/facebook-vai-liberar-que-criadores-de-video-cobrem-assinaturas-mensais.ghtml', 'https://g1.globo.com/economia/noticia/caixa-teve-em-2017-melhor-resultado-da-historia-e-reduzira-juros-em-credito-habitacional-diz-occhi.ghtml', 'https://g1.globo.com/economia/noticia/no-12-corte-seguido-bc-baixa-juro-para-65-ao-ano-novo-piso-historico.ghtml', 'https://g1.globo.com/economia/noticia/perda-de-carga-causou-apagao-no-norte-e-no-nordeste-diz-ons.ghtml', 'https://g1.globo.com/economia/tecnologia/noticia/nos-cometemos-erros-diz-mark-zuckerberg-sobre-escandalo-do-facebook-com-cambridge-analytica.ghtml', 'https://g1.globo.com/economia/noticia/governo-deve-anunciar-novo-bloqueio-de-gastos-no-orcamento-de-2018.ghtml', 'https://g1.globo.com/economia/noticia/emprestimos-do-bndes-caem-32-no-1-bimestre.ghtml', 'https://g1.globo.com/economia/noticia/sinalizacao-de-mais-um-corte-na-proxima-reuniao-do-copom-surpreende-dizem-economistas.ghtml'])
+Traceback (most recent call last):
+  File "linkColector.py", line 158, in <module>
+    process.crawl(DataCollectorCrawler)
+NameError: name 'DataCollectorCrawler' is not defined
