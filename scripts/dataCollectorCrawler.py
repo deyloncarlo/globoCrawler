@@ -87,7 +87,7 @@ class DataCollectorCrawler(scrapy.Spider):
             if(os.path.exists('content') == False):
                 os.mkdir('content')   
 
-            v_file = open('content/' + p_author + '.arff', 'w')
+            v_file = open('content/' + p_author + '.arff', 'a')
             
             v_escreveCabecalho = False            
             if os.path.getsize('content/' + p_author + '.arff') <= 0 :
