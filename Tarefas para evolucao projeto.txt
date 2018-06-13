@@ -1,0 +1,7 @@
+ - Período da coleta
+ - Quantos dias coleta
+ - Número artigos por autor
+ - Obter palavras mais frequentes por autor
+ - OK (Algoritmo pronto) Fazer núvem de palavras (Biblioteca python "wordCloud") por autor
+ - Análise de sentimento
+ - Rodar o altorimo no WEKA (70% aprendizado e 30% classificação de fato)
