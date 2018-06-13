@@ -2,8 +2,11 @@ from unidecode import unidecode
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import re
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud, STOPWORDS
 
 stop_words = set(stopwords.words('portuguese'))
+stop_words.update(('a', 'A', 'As', 'as', 'O', 'Os', 'o', 'os', 'nao', 'ainda', 'sera', 'ser', 'ha', 'ja'))
 
 def removerPontuacao(p_linha):
     v_atributos = p_linha.split('","')
@@ -13,8 +16,15 @@ def removerPontuacao(p_linha):
     v_texto = re.sub('[^a-zA-Z0-9 \\\]', ' ', v_atributos[3])
     return "'" + v_title + "'" + "," + "'" + v_autor + "'" + "," + "'" + v_data + "'" + "," + "'" + v_texto + "'"
 
+def generate_wordcloud(text): # optionally add: stopwords=STOPWORDS and change the arg below
+    wordcloud = WordCloud(relative_scaling = 1.0).generate(text)
+    plt.imshow(wordcloud)
+    plt.axis("off")
+    plt.show()
 
-v_file = open('content/allContent.arff', 'r')
+v_nameFileToClean = 'content/Carlos Melo.arff'
+v_nameFileOutPut = 'content/carlosMeloCleaned.arff'
+v_file = open(v_nameFileToClean, 'r')
 
 v_canToLowerCase = False
 v_contentLower = []
@@ -40,7 +50,7 @@ for v_line in v_file:
 v_file.close()
 
 def escreverConteudo():
-    v_fileOut = open('content/allContentCleaned.arff', 'w')
+    v_fileOut = open(v_nameFileOutPut, 'w')
     v_fileOut.write('@relation TEXTvsAUTHOR')
     v_fileOut.write('\n\n')
     v_fileOut.write('@attribute title string')
